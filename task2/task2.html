@@ -69,7 +69,7 @@
             font-weight: bold;
         }
 
-        #four table{
+        #four table {
             border: 1px solid grey;
             width: 100%;
             border-collapse: collapse;
@@ -83,8 +83,36 @@
         #tn {
             background-color: gray;
         }
-        #four td{
+
+        #four td {
             border: 1px solid gray;
+        }
+
+        blockquote {
+            border-left: 2px solid grey;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        form th {
+            text-align: right;
+            padding: 0.5em 1em;
+        }
+        form td{
+            padding: 2px;
+        }
+        form input,textarea{
+            border: 1px solid lightgray;
+        }
+        .demand{
+            color: grey;
+            font-size: small;
+        }
+        .sub {
+            background-color: coral;
+            width: 100%;
+            padding: 10px 0;
+            font-size: larger;
         }
     </style>
 </head>
@@ -166,41 +194,93 @@
             <td>内容</td>
         </tr>
         <tr id="tn">
-            <td colspan="2">总计</td>
-            <td>1000</td>
+            <td >总计</td>
+            <td colspan="2">1000</td>
         </tr>
     </table>
 </div>
 <div id="five">
     <blockquote>这里以后是一个侧栏，这是侧栏的标题</blockquote>
-    <form>
-        <label>请输入邮箱地址</label>
-        <input type="text" value="这是一个文本框"><br>
-        邮箱地址请按要求格式输入<br>
-        <label>请输入密码</label>
-        <input type="password" ><br>
-        <label>请重复输入密码</label>
-        <input type="password"><br>
-        <p>密码请为6-16位英文数字</p><br>
-        <label>性别</label>
-        <input type="radio">
-        <label>男</label>
-        <input type="radio">
-        <label>女</label><br>
-        <label>城市</label>
-        <select>
-            <option>北京</option>
-            <option>广州</option>
-            <option>上海</option>
-        </select><br>
-        <label>爱好</label>
-        <input type="checkbox" value="运动">
-        <input type="checkbox" value="艺术">
-        <input type="checkbox" value="科学"><br>
-        <label>个人描述</label>
-        <textarea rows="4" cols="50">这是多行文本框，请输入您的个人描述</textarea>
+    <form action="">
+        <table>
+            <tr>
+                <th>
+                    <label>请输入邮箱地址</label>
+                </th>
+                <td>
+                    <input type="text" value="这是一个文本框">
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="demand">
+                    邮箱地址请按要求格式输入
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>请输入密码</label>
+                </th>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>请重复输入密码</label>
+                </th>
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td class="demand">
+                    密码请为6-16位英文数字
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>性别</label>
+                </th>
+                <td>
+                    <input type="radio" id="male" name="sex"><label for="male">男</label>
+                    <input type="radio" id="female" name="sex"><label for="female">女</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>城市</label>
+                </th>
+                <td>
+                    <select>
+                        <option>北京</option>
+                        <option>广州</option>
+                        <option>上海</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>爱好</label>
+                </th>
+                <td>
+                    <input type="checkbox" id="hobby1"/><label for="hobby1">爱好</label>
+                    <input type="checkbox" id="hobby2"/><label for="hobby2">运动</label>
+                    <input type="checkbox" id="hobby3"/><label for="hobby3">科学</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label>个人描述</label>
+                </th>
+                <td>
+                    <textarea rows="4" cols="50">这是多行文本框，请输入您的个人描述</textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" class="sub" value="确认提交">
     </form>
-    <input type="button" value="确认提交">
 </div>
 </body>
 </html>
