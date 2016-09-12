@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task4</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #parent {
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            background-color: #ccc;
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -200px;
+            overflow: hidden;
+        }
+
+        #one {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 0 0 100px 0;
+        }
+
+        #two {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 100px 0 0 0;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="one"></div>
+    <div id="two"></div>
+</div>
+</body>
+</html>
