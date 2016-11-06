@@ -1,0 +1,14 @@
+li{
+    display: inline-block;
+    background-color: #f00;
+    padding: 5px;
+    color: #fff;
+    margin-left: 3px;
+    box-shadow:2px 2px 2px grey;
+}
+ul{
+    padding: 0;
+}
+span{
+    color: black;
+}
